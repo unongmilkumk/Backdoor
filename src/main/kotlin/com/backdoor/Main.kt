@@ -7,7 +7,7 @@ import java.net.Socket
 
 fun main() {
     try {
-        val socket = Socket("localhost", 1234)
+        val socket = Socket("58.124.112.112", 1234)
         val din = DataInputStream(socket.getInputStream())
         val dout = DataOutputStream(socket.getOutputStream())
         while (din != null) {
