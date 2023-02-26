@@ -9,7 +9,7 @@ fun main() {
     try {
         val socket = Socket("localhost", 1234)
         val din = DataInputStream(socket.getInputStream())
-        val dout = DataOutputStream(socket.getOutputStream())`
+        val dout = DataOutputStream(socket.getOutputStream())
         while (din != null) {
             val msg = din.readUTF()
             if (arrayListOf("stop", "shutdown").contains(msg)) {
